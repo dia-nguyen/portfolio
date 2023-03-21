@@ -12,6 +12,13 @@ function WindowResize({ size, title, children, onToggleWindow, type }) {
         x: 20,
         y: 50,
       };
+    } else if (type === "about") {
+      const windowWidth = window.innerWidth / 2 - 280;
+      const windowHeight = window.innerHeight / 2 - 200;
+      return {
+        x: windowWidth,
+        y: windowHeight,
+      };
     } else {
       const windowWidth = window.innerWidth - 450; // subtract window width
       const windowHeight = window.innerHeight - 600; // subtract window height
@@ -20,20 +27,27 @@ function WindowResize({ size, title, children, onToggleWindow, type }) {
         y: Math.floor(Math.random() * windowHeight),
       };
     }
-  }, []);
+  }, [type]);
 
-  let edges = {
-    left: false,
-    right: true,
-    bottom: true,
-    top: false,
-  };
+  const edges = useMemo(() => {
+    let edges = {
+      left: false,
+      right: true,
+      bottom: true,
+      top: false,
+    };
 
-  if (type === "about") {
-    edges = {
-      left: false, right: false, bottom: false, top: false
+    if (type === "about") {
+      edges = {
+        left: false,
+        right: false,
+        bottom: false,
+        top: false,
+      };
     }
-  }
+
+    return edges;
+  }, [type]);
 
   useEffect(() => {
     if (windowRef.current) {
@@ -66,7 +80,7 @@ function WindowResize({ size, title, children, onToggleWindow, type }) {
           // target.textContent = event.rect.width + '×' + event.rect.height;
         });
     }
-  }, [windowRef]);
+  }, [windowRef, edges]);
 
   function dragMoveListener(event) {
     const target = event.target;
