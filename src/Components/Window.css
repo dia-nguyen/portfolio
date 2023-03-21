@@ -8,6 +8,8 @@
   border-radius: var(--rounded);
   z-index: 10;
   max-width: 85vw;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
 }
 
 .Window-header {
@@ -153,4 +155,14 @@
     min-height: 50vh
   }
 
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

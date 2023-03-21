@@ -22,7 +22,7 @@ function Loader() {
       <div className="loader-overlay"></div>
       <div className="loader-content">
         <div className="loader-bar" style={{ width: `${progress}%` }}></div>
-        <p>Loading...</p>
+        <p>Starting Up...</p>
       </div>
     </div>
   );
