@@ -1,0 +1,156 @@
+.Window {
+  position: absolute;
+  width: 100%;
+  max-width: calc(100vw - 50px);
+  box-shadow: 5px 5px 0 -1px var(--secondary);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: var(--rounded);
+  z-index: 10;
+  max-width: 85vw;
+}
+
+.Window-header {
+  background: var(--primary);
+  box-shadow: inset 1px 1px 0 0 var(--white);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  height: 1.5em;
+  font-size: 1.25rem;
+}
+
+.Window-body {
+  font-family: "Pixel Arial";
+  line-height: 2;
+  height: calc(100% - 27px);
+  overflow-x: hidden;
+  color: var(--black);
+}
+
+.Window-inner {
+  padding: 2rem;
+  height: 100%;
+  font-size: 0.5rem;
+  text-align: start;
+}
+
+.Window-title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Window-title > div {
+  position: absolute;
+  background: var(--primary);
+  padding: 0 0.5rem;
+  text-transform: lowercase;
+}
+
+.Window-close {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-style: none;
+  border-width: 0;
+  padding: 0 0.5rem 0 0;
+  cursor: pointer;
+}
+.Window-close:hover {
+  opacity: 0.8;
+}
+.Window-title .spacer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.Window-title .spacer i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 2px;
+  background: var(--dark);
+}
+
+.Window-small {
+  width: 32rem;
+  height: 15rem;
+}
+
+.Window-medium {
+  width: 25rem;
+  height: 32rem;
+}
+
+.Window-large {
+  width: 40rem;
+  height: 40rem;
+}
+/*
+.Window-medium {
+  width: 550px;
+  height: 250px;
+} */
+
+.Window-about {
+  width: 35rem;
+  height: 18rem;
+}
+
+.Window-themes {
+  width: 20rem;
+  height: 20rem;
+}
+
+.Window.Window-terminal {
+  background-color: #000;
+  color: var(--white);
+  text-align: left;
+  border: 1px solid var(--black);
+  width: 40rem;
+  height: 30rem;
+}
+
+.terminal-base {
+  height: unset !important;
+  min-width: unset !important;
+  width: unset !important;
+  max-width: unset !important;
+  max-height: unset !important;
+  min-height: unset !important;
+  overflow: hidden;
+}
+
+.terminal-base * {
+  font-family: "Pixel Arial" !important;
+  font-size: 8px !important;
+  font-weight: normal !important;
+  padding: 1px !important;
+}
+
+.terminal-base div {
+  overflow: hidden;
+}
+
+.terminal-base pre {
+  margin-top: 0px !important;
+  margin-bottom: 5px !important
+}
+
+
+@media (max-width: 600px) {
+  .Window-about {
+    min-height: 65vh
+  }
+
+  .Window.Window-terminal {
+    min-height: 50vh
+  }
+
+}

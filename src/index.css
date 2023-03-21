@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Chicago";
+  src: url("./fonts/chicago.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Pixel Arial";
+  src: url("./fonts/pixel-arial-2.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal
+}
+
+
+:root {
+  --primary: #d0c0ff;
+  --secondary: rgba(192,255,208,0.45);
+  --dark: #b8a0ff;
+  --rounded: .125rem;
+  --shadow: #d3d0d0;
+  --white: #fff;
+  --black: #000;
+}
+
+.dark-mode {
+  --primary: #b8a0ff;
+  --secondary: rgba(30,40,35,0.45);
+  --dark: #d0c0ff;
+  --shadow: #585858;
+  --white: #111;
+  --black: #fff;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 7px;
+  background: rgba(208, 192, 255, 0.3);
+
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgba(208, 192, 255, 0.9);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(255, 100%, 88%);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
+
+* {
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  font-family: 'Chicago';
+  font-size: 10px;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.b--lilac {
+  border-color: var(--dark);
+}
+nav {
+  background-color: var(--primary);
+}
+
+
+.chicago {
+  font-family: 'Chicago', Arial, Helvetica, sans-serif;
+}
+
+.f4 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+.lilac {
+  color: var(--dark);
+}
+
+h3 {
+  font-family: 'Chicago', Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+}
+h4 {
+  font-family: 'Chicago', Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  text-transform: lowercase;
+  margin: 0;
+  letter-spacing: 0;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  margin-top: 0.5rem;
+  font-family: "Chicago";
+  background: transparent;
+  border: 1px solid var(--black);
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.15;
+  padding: 2px 8px;
+  color: var(--black);
+  display: inline-block;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:active {
+  box-shadow: var(--shadow) inset 2px 2.5px;
+}
+
+.theme-btn {
+  background: transparent;
+  border: 1px solid var(--black);
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  color: var(--black);
+}
+.btn:hover, .btn:active,
+.theme-btn:hover, .theme-btn:active {
+  box-shadow: var(--shadow) inset 2px 2.5px;
+}

@@ -1,0 +1,34 @@
+.Dock {
+  padding-bottom: 2rem;
+  font-size: 1.25rem;
+
+}
+
+.Dock-icon {
+  image-rendering: pixelated;
+}
+
+.DockItem {
+  cursor: pointer !important;
+}
+.Dock-btn {
+  border-style: none;
+  border-width: 0;
+  background-color: transparent;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.Dock-btn:hover {
+  transform: scale(1.1);
+}
+
+.dark-mode .Dock-icon {
+  filter: invert()
+}
+
+@media (max-width: 600px) {
+  .Dock > div {
+    flex-wrap: wrap;
+  }
+}
