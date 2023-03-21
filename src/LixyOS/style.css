@@ -1,6 +1,5 @@
 .LixyOS {
-  /* background-image: url('./pattern.png'); */
-  background-image: url('../assets/bg/grid.png');
+  background-image: url('https://lixy-portfolio.s3.us-west-1.amazonaws.com/background/grid.png');
   background-size: cover;
   letter-spacing: 1px;
   overflow: hidden;

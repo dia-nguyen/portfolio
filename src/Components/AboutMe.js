@@ -1,8 +1,8 @@
 import WindowResize from "./Window-resize";
-import profile from "../assets/me.jpeg";
 import "./AboutMe.css";
 
 function AboutMe({ onToggleWindow }) {
+  const profile = "https://lixy-portfolio.s3.us-west-1.amazonaws.com/about/me.jpeg";
   return (
     <WindowResize size="medium" title="About Me" onToggleWindow={onToggleWindow} type="about">
       <div className="bio">

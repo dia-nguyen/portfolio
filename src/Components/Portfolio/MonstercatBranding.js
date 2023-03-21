@@ -1,14 +1,14 @@
 import WindowResize from "../Window-resize";
-import monstercatMusic from "../../assets/player-preview.png";
 
 function MonstercatBranding({ onToggleWindow }) {
+  const monstercat = "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/monstercat-preview.png";
   return (
     <WindowResize
       size="medium"
       title="Monstercat.com"
       onToggleWindow={onToggleWindow}
     >
-      <img src={monstercatMusic} alt="music" />
+      <img src={monstercat} alt="music" />
       <h3>Monstercat.com</h3>
       <p>
         Monstercat is an electronic music record label company based in

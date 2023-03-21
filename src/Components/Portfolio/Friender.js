@@ -1,7 +1,7 @@
 import WindowResize from "../Window-resize";
-import friender from "../../assets/friender-preview.png";
 
 function Friender({ onToggleWindow }) {
+  const friender = "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/friender-preview.png";
   return (
     <WindowResize size="medium" title="Friender" onToggleWindow={onToggleWindow}>
       <img src={friender} alt="friender" />

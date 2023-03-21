@@ -1,7 +1,7 @@
 import WindowResize from "../Window-resize";
-import jobly from "../../assets/jobly.png";
 
 function Jobly({ onToggleWindow }) {
+  const jobly = "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/jobly-preview.png";
   return (
     <WindowResize size="medium" title="Jobly" onToggleWindow={onToggleWindow}>
       <img src={jobly} alt="Jobly" />

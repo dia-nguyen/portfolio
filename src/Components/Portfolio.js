@@ -1,34 +1,30 @@
 import PortfolioItem from "./PortfolioItem";
 import WindowResize from "./Window-resize";
-import monstercatWebsiteImg from "../assets/monstercat-icon.svg"
-import monstercatMusicImg from "../assets/monstercat-player-icon.svg"
-import frienderImg from "../assets/friender-icon.svg"
-import joblyImg from "../assets/jobly-icon.svg"
 
 function Portfolio({ onToggleWindow, music, monstercat, friender,jobly }) {
   const portfolioItems = [
     {
       title: "Music Player",
-      img: monstercatMusicImg,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/monstercat-player-icon.svg",
       url: "https://player.monstercat.app/",
       openWindow: music
     },
     {
       title: "Monstercat",
-      img: monstercatWebsiteImg,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/monstercat-icon.svg",
       url: "https://monstercat.com",
       openWindow: monstercat
 
     },
     {
       title: "Friender",
-      img: frienderImg,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/friender-icon.svg",
       url: "https://friendliest.surge.sh/",
       openWindow: friender
     },
     {
       title: "Jobly",
-      img: joblyImg,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/jobly-icon.svg",
       url: "https://jobliest.surge.sh/",
       openWindow: jobly
     },

@@ -1,7 +1,7 @@
 import WindowResize from "../Window-resize";
-import monstercatPlayer from "../../assets/monstercat-preview.png";
 
 function MonstercatMusic({ onToggleWindow }) {
+  const monstercatPlayer = "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/player-preview.png";
   return (
     <WindowResize
       size="medium"

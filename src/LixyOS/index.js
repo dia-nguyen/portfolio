@@ -14,10 +14,6 @@ import MonstercatMusic from "../Components/Portfolio/MonstercatMusic";
 import Friender from "../Components/Portfolio/Friender";
 import Jobly from "../Components/Portfolio/Jobly";
 import themeContext from "../Theme/themeContext";
-import hello from "../assets/bg/hellox3.png";
-import grid from "../assets/bg/grid.png";
-import dots from "../assets/bg/dots.png";
-import stripes from "../assets/bg/stripes.png";
 
 /**
  * LixyOS
@@ -52,19 +48,19 @@ function LixyOS() {
   const themes = [
     {
       theme: "hello",
-      img: hello,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/background/hellox3.png",
     },
     {
       theme: "grid",
-      img: grid,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/background/grid.png",
     },
     {
       theme: "dots",
-      img: dots,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/background/dots.png",
     },
     {
       theme: "stripes",
-      img: stripes,
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/background/stripes.png",
     },
   ];
 
