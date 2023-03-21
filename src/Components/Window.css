@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
 .Window {
   position: absolute;
   width: 100%;
@@ -24,17 +26,19 @@
 }
 
 .Window-body {
-  font-family: "Pixel Arial";
+  font-family: "Poppins";
+  font-weight: 500;
   line-height: 2;
   height: calc(100% - 27px);
   overflow-x: hidden;
   color: var(--black);
+  letter-spacing: 0.5px;
 }
 
 .Window-inner {
   padding: 2rem;
   height: 100%;
-  font-size: 0.5rem;
+  font-size: 12px;
   text-align: start;
 }
 
@@ -87,7 +91,7 @@
 
 .Window-medium {
   width: 25rem;
-  height: 32rem;
+  height: 35rem;
 }
 
 .Window-large {
@@ -101,8 +105,8 @@
 } */
 
 .Window-about {
-  width: 35rem;
-  height: 18rem;
+  width: 43rem;
+  height: 21rem;
 }
 
 .Window-themes {
@@ -130,9 +134,9 @@
 }
 
 .terminal-base * {
-  font-family: "Pixel Arial" !important;
-  font-size: 8px !important;
-  font-weight: normal !important;
+  font-family: "Poppins" !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
   padding: 1px !important;
 }
 
