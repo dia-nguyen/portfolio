@@ -152,7 +152,7 @@
 
 @media (max-width: 600px) {
   .Window-about {
-    min-height: 65vh
+    min-height: 70vh
   }
 
   .Window.Window-terminal {
