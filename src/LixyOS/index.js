@@ -13,6 +13,7 @@ import MonstercatBranding from "../Components/Portfolio/MonstercatBranding";
 import MonstercatMusic from "../Components/Portfolio/MonstercatMusic";
 import Friender from "../Components/Portfolio/Friender";
 import Jobly from "../Components/Portfolio/Jobly";
+import Pomogarden from "../Components/Portfolio/Pomogarden";
 import themeContext from "../Theme/themeContext";
 
 /**
@@ -36,6 +37,7 @@ function LixyOS() {
     monstercatBranding: false,
     friender: false,
     jobly: false,
+    pomoGarden: false,
   });
 
   const toggleWindow = (windowName) => {
@@ -101,6 +103,7 @@ function LixyOS() {
               monstercat={() => toggleWindow("monstercatBranding")}
               friender={() => toggleWindow("friender")}
               jobly={() => toggleWindow("jobly")}
+              pomoGarden={() => toggleWindow("pomoGarden")}
             />
           )}
           {showWindows.journal && (
@@ -130,6 +133,9 @@ function LixyOS() {
           )}
           {showWindows.jobly && (
             <Jobly onToggleWindow={() => toggleWindow("jobly")} />
+          )}
+          {showWindows.pomoGarden && (
+            <Pomogarden onToggleWindow={() => toggleWindow("pomoGarden")} />
           )}
         </div>
 

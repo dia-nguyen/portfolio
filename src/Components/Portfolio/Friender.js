@@ -15,12 +15,20 @@ function Friender({ onToggleWindow }) {
       <p>Guest account: guest@email.com/password</p>
       <p>The app may need a moment to wake up!</p>
       <a
-        href="https://friendliest.surge.sh"
+        href="https://frontend-friender.vercel.app"
         target="_blank"
         className="btn"
         rel="noreferrer"
       >
         Visit App
+      </a>
+      <a
+        href="https://github.com/dia-nguyen/frontend-friender"
+        target="_blank"
+        className="btn"
+        rel="noreferrer"
+      >
+        Github Repo
       </a>
     </WindowResize>
   );

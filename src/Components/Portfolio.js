@@ -1,7 +1,7 @@
 import PortfolioItem from "./PortfolioItem";
 import WindowResize from "./Window-resize";
 
-function Portfolio({ onToggleWindow, music, monstercat, friender,jobly }) {
+function Portfolio({ onToggleWindow, music, monstercat, friender,jobly, pomoGarden }) {
   const portfolioItems = [
     {
       title: "Music Player",
@@ -28,10 +28,16 @@ function Portfolio({ onToggleWindow, music, monstercat, friender,jobly }) {
       url: "https://jobliest.surge.sh/",
       openWindow: jobly
     },
+    {
+      title: "Pomo Garden",
+      img: "https://lixy-portfolio.s3.us-west-1.amazonaws.com/portfolio-preview/pomogarden-icon.svg",
+      url: "https://github.com/dia-nguyen/pomogarden-UI",
+      openWindow: pomoGarden
+    }
   ]
   return (
     <>
-      <WindowResize size="small" title="Projects" onToggleWindow={onToggleWindow}>
+      <WindowResize size="shmedium" title="Projects" onToggleWindow={onToggleWindow}>
         <div className="PortfolioCollection">
           {portfolioItems.map((item, i) => (
             <PortfolioItem key={i} title={item.title} image={item.img} url={item.url} extra={item.openWindow}/>
